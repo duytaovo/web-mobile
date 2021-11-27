@@ -2,10 +2,10 @@
 -- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Nov 24, 2021 at 03:54 AM
--- Server version: 5.7.31
--- PHP Version: 7.3.21
+-- Máy chủ: 127.0.0.1:3306
+-- Thời gian đã tạo: Th10 27, 2021 lúc 04:50 AM
+-- Phiên bản máy phục vụ: 5.7.31
+-- Phiên bản PHP: 7.3.21
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db-shop-new`
+-- Cơ sở dữ liệu: `db-shop-new`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `db_category`
+-- Cấu trúc bảng cho bảng `db_category`
 --
 
 DROP TABLE IF EXISTS `db_category`;
@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS `db_category` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `db_config`
+-- Cấu trúc bảng cho bảng `db_config`
 --
 
 DROP TABLE IF EXISTS `db_config`;
@@ -62,17 +62,10 @@ CREATE TABLE IF NOT EXISTS `db_config` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
---
--- Dumping data for table `db_config`
---
-
-INSERT INTO `db_config` (`id`, `mail_smtp`, `mail_smtp_password`, `mail_noreply`, `priceShip`, `title`, `description`) VALUES
-(1, 'my-shop@gmail.com', '123456', 'my-shop2@gmail.com', '30000', 'Web site bán hàng Demo', '');
-
 -- --------------------------------------------------------
 
 --
--- Table structure for table `db_contact`
+-- Cấu trúc bảng cho bảng `db_contact`
 --
 
 DROP TABLE IF EXISTS `db_contact`;
@@ -92,7 +85,7 @@ CREATE TABLE IF NOT EXISTS `db_contact` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `db_content`
+-- Cấu trúc bảng cho bảng `db_content`
 --
 
 DROP TABLE IF EXISTS `db_content`;
@@ -112,19 +105,10 @@ CREATE TABLE IF NOT EXISTS `db_content` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
---
--- Dumping data for table `db_content`
---
-
-INSERT INTO `db_content` (`id`, `title`, `alias`, `introtext`, `fulltext`, `img`, `created`, `created_by`, `modified`, `modified_by`, `trash`, `status`) VALUES
-(4, 'Bất chấp lệnh cấm, doanh số smartphone của Huawei vẫn tăng 130% ở Trung Quốc', 'bat-chap-lenh-cam-doanh-so-smartphone-cua-huawei-van-tang-130-o-trung-quoc', 'Điều này cho thấy ảnh hưởng từ cuộc chiến tranh thương mại Mỹ - Trung lên thị trường Trung Quốc là không đáng kể.', '<p>Kể từ khi ch&iacute;nh phủ Hoa Kỳ đưa&nbsp;<a href=\"https://fptshop.com.vn/dien-thoai/huawei\" target=\"_blank\">Huawei</a>&nbsp;v&agrave;o &ldquo;danh s&aacute;ch đen&rdquo;, rất nhiều c&ocirc;ng ty như Google Intel, Qualcomm v&agrave; ARM,... đều cũng đ&atilde; l&ecirc;n tiếng x&aacute;c nhận ngừng hợp t&aacute;c với nh&agrave; sản xuất đến từ Trung Quốc n&agrave;y.</p>\r\n\r\n<p>Ngo&agrave;i ra, c&aacute;c hiệp hội như Wi-Fi Alliance, hiệp hội b&aacute;n dẫn JEDEC, SDA (Hiệp hội SD) v&agrave; ti&ecirc;u chuẩn PCIe cũng hủy bỏ tư c&aacute;ch th&agrave;nh vi&ecirc;n của Huawei. Người ta tin rằng t&igrave;nh trạng n&agrave;y sẽ l&agrave;m sụp đổ hoạt động kinh doanh của Huawei ngay cả ở thị trường qu&ecirc; nh&agrave; Trung Quốc. Tuy nhi&ecirc;n, dường như lệnh cấm của Mỹ đang khuyến kh&iacute;ch người Trung Quốc chọn mua smartphone của nh&agrave; sản xuất Trung Quốc n&agrave;y.</p>\r\n\r\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img alt=\"\" src=\"https://fptshop.com.vn/uploads/images/tin-tuc/84115/Originals/Huawei-dat-doanh-thu-khung-tren-Tmall-2.jpg\" style=\"height:650px; width:300px\" /></p>\r\n\r\n<p>Cụ thể, sau lệnh cấm của Mỹ đối với Huawei v&agrave;o ng&agrave;y 16 th&aacute;ng 5, doanh số của điện thoại th&ocirc;ng minh Huawei tr&ecirc;n nền tảng Tmall đ&atilde; tăng mạnh. Theo dữ liệu ch&iacute;nh thức từ Tmall, từ ng&agrave;y 18 đến 20 th&aacute;ng 5, c&aacute;c l&ocirc; h&agrave;ng điện thoại di động của Huawei từ Tmall đ&atilde; tăng 130%, vượt mức tăng trưởng trung b&igrave;nh của ng&agrave;nh smartphone n&oacute;i chung tới 30%. V&agrave; để &ldquo;ăn mừng&rdquo; điều n&agrave;y, Huawei cũng đ&atilde; đăng tải một tấm poster để &ldquo;chia vui&rdquo; c&ugrave;ng người d&ugrave;ng.</p>\r\n\r\n<p>Để đạt được điều n&agrave;y l&agrave; do Trung Quốc gần như l&agrave; một thị trường kh&eacute;p k&iacute;n với c&aacute;c dịch vụ &ldquo;tự cung tự cấp&rdquo; v&agrave; kh&ocirc;ng hề dựa dẫm qu&aacute; nhiều v&agrave;o m&ocirc;i trường b&ecirc;n ngo&agrave;i. Do đ&oacute; ảnh hưởng từ lệnh cấm vận của Mỹ l&ecirc;n thị trường tỷ d&acirc;n n&agrave;y l&agrave; kh&ocirc;ng đ&aacute;ng kể v&agrave; Huawei ho&agrave;n to&agrave;n c&oacute; thể l&agrave;m chủ t&igrave;nh h&igrave;nh ở ngay tại thị trường nội địa m&agrave; kh&ocirc;ng gặp bất cứ vấn đề n&agrave;o.</p>\r\n\r\n<p><strong>Theo:&nbsp;</strong><em><a href=\"http://www.gizchina.com/2019/05/24/huawei-smartphone-shipment-grows-despite-us-ban/\" target=\"_blank\">Gizchina</a></em></p>\r\n', 'huawei-hongmeng-os_800x450.jpg', '2019-05-26 23:18:02', '1', '2019-06-23 18:03:27', '1', 1, 1),
-(5, 'HongMeng OS của Huawei xuất hiện trực tuyến, có tên quốc tế là Ark OS', 'hongmeng-os-cua-huawei-xuat-hien-truc-tuyen-co-ten-quoc-te-la-ark-os', '', '<h2>Kh&ocirc;ng c&ograve;n nghi ngờ g&igrave; nữa,&nbsp;<a href=\"https://www.thegioididong.com/dtdd-huawei\" target=\"_blank\">Huawei</a>&nbsp;đang ph&aacute;t triển hệ điều h&agrave;nh của ri&ecirc;ng m&igrave;nh, c&oacute; thể được gọi l&agrave;&nbsp;<a href=\"https://www.thegioididong.com/tin-tuc/huawei-mate-30-se-chay-he-dieu-hanh-hongmeng-os-va-chip-kirin-985-1170811\" target=\"_blank\">HongMeng OS</a>&nbsp;ở Trung Quốc v&agrave; Ark OS ở c&aacute;c quốc gia kh&aacute;c. Hệ thống n&agrave;y đ&atilde; th&ocirc;ng qua chứng nhận nh&atilde;n hiệu của Văn ph&ograve;ng Thương hiệu Trung Quốc cũng như Văn ph&ograve;ng Sở hữu Tr&iacute; tuệ Ch&acirc;u &Acirc;u.</h2>\r\n\r\n<p>C&aacute;c b&aacute;o c&aacute;o gần đ&acirc;y cho thấy Huawei đ&atilde; nộp đơn xin cấp bằng s&aacute;ng chế giao diện&nbsp;<a href=\"https://www.thegioididong.com/dtdd\" target=\"_blank\">smartphone</a>&nbsp;với t&ecirc;n l&agrave; Huawei Ark OS.&nbsp;Trong đ&oacute;, Ark v&agrave; Huawei Ark đ&atilde; được&nbsp;Văn ph&ograve;ng nh&atilde;n hiệu v&agrave; bằng s&aacute;ng chế của Đức chứng nhận v&agrave;o th&aacute;ng 3 năm nay.</p>\r\n\r\n<p>Ứng dụng bằng s&aacute;ng chế cũng bao gồm một loạt c&aacute;c ảnh chụp m&agrave;n h&igrave;nh. Tuy nhi&ecirc;n, kh&ocirc;ng r&otilde; liệu ảnh chụp m&agrave;n h&igrave;nh b&ecirc;n dưới c&oacute; thuộc hệ thống HongMeng/ Ark sắp tới của Huawei hay kh&ocirc;ng.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><img alt=\"\" src=\"https://cdn.tgdd.vn/Files/2019/06/08/1171773/Gallery/ark-os-z.jpg\" style=\"height:309px; width:550px\" /></p>\r\n\r\n<p>Một trong những ảnh chụp m&agrave;n h&igrave;nh c&oacute; cụm từ &quot;Android Green Alliance&quot; gợi &yacute; rằng hệ thống HongMeng/ Ark c&oacute; thể tương th&iacute;ch với c&aacute;c ứng dụng&nbsp;<a href=\"https://www.thegioididong.com/dtdd?g=android\" target=\"_blank\">Android</a>. Li&ecirc;n minh Android Xanh được Huawei, Alibaba, Tencent v&agrave; Netease phối hợp ra mắt. N&oacute; nhằm mục đ&iacute;ch tạo ra một hệ sinh th&aacute;i ứng dụng an to&agrave;n, đ&aacute;ng tin cậy v&agrave; l&agrave;nh mạnh.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><img alt=\"\" src=\"https://cdn.tgdd.vn/Files/2019/06/08/1171773/ark-os_550x409.jpg\" style=\"height:409px; width:550px\" /></p>\r\n\r\n<p>Hiện nay, nhiều c&ocirc;ng ty đ&atilde; tham gia. Trước đ&acirc;y, Yu Chengdong -&nbsp;Gi&aacute;m đốc điều h&agrave;nh bộ phận kinh doanh ti&ecirc;u d&ugrave;ng của Huawei, đ&atilde; tiết lộ rằng Huawei OS sẽ tương th&iacute;ch với smartphone, m&aacute;y t&iacute;nh,&nbsp;<a href=\"https://www.thegioididong.com/may-tinh-bang\" target=\"_blank\">m&aacute;y t&iacute;nh bảng</a>, TV, xe hơi, thiết bị đeo th&ocirc;ng minh v&agrave; nhiều hệ thống kh&aacute;c.</p>\r\n\r\n<p>Nguồn:&nbsp;<a href=\"https://www.gizchina.com/2019/06/07/suspected-huawei-ark-os-interface-appears-online/\" target=\"_blank\">Gizchina</a></p>\r\n', '636944709585403075_huawei-dat-doanh-thu-khung-tren-tmall-cover.jpg', '2019-06-10 00:27:23', '1', '2019-06-12 22:53:05', '1', 0, 1),
-(6, 'Sắm Galaxy A50, \"bá chủ\" bán chạy tầm trung, tặng thêm quà Samsung chính hãng', 'sam-galaxy-a50-ba-chu-ban-chay-tam-trung-tang-them-qua-samsung-chinh-hang', '', '<p>Cụ thể hơn, khi mua&nbsp;Samsung Galaxy A50 ngay b&acirc;y giờ bạn sẽ nhận được c&aacute;c ưu đ&atilde;i cực kỳ hấp dẫn sau:</p>\r\n\r\n<ul>\r\n	<li>Tặng sạc nhanh dự ph&ograve;ng 10.000 mAh ch&iacute;nh h&atilde;ng Samsung (hỗ trợ t&iacute;nh năng sạc nhanh).</li>\r\n	<li>Giảm ngay 300.000 đồng qua qu&agrave; tặng Galaxy (Kh&ocirc;ng &aacute;p dụng chương tr&igrave;nh thu cũ đổi mới).</li>\r\n	<li>Giảm th&ecirc;m 3%, tức khoảng 210.000 đồng cho<a href=\"https://www.thegioididong.com/tin-tuc/uu-dai-sinh-nhat-giam-soc-den-40--nhanh-tay-nao-ban--1168670\" target=\"_blank\">&nbsp;kh&aacute;ch mua online c&oacute; sinh nhật trong th&aacute;ng 6</a>&nbsp;(Kh&ocirc;ng &aacute;p dụng chương tr&igrave;nh thu cũ đổi mới, trả g&oacute;p 0%).</li>\r\n	<li>Đổi m&aacute;y cũ l&ecirc;n đời A50 tiết kiệm đến 7.000.000 đồng, &aacute;p dụng từ ng&agrave;y 1/6 đến 30/6​.</li>\r\n</ul>\r\n\r\n<p>Samsung Galaxy A50 l&agrave; chiếc&nbsp;<a href=\"https://www.thegioididong.com/dtdd-samsung\" target=\"_blank\">smartphone Samsung&nbsp;</a>tầm trung mới&nbsp;trong năm 2019 với nhiều t&iacute;nh năng hấp dẫn như cảm biến v&acirc;n tay dưới m&agrave;n h&igrave;nh,&nbsp;m&agrave;n h&igrave;nh Infinity-U tr&agrave;n viền, 3 camera cho chất lượng ảnh tốt,...</p>\r\n\r\n<p><img alt=\"\" src=\"/DO-AN-TN-2019/public/upload/images/samsung-galaxy-a50-black-10_800x450.jpg\" style=\"height:450px; width:800px\" /></p>\r\n\r\n<p>Để đặt mua hoặc biết th&ecirc;m c&aacute;c th&ocirc;ng tin kh&aacute;c về&nbsp;Samsung Galaxy A50, bạn c&oacute; thể nhấn v&agrave;o đường dẫn sản phẩm ngay sau đ&acirc;y!</p>\r\n\r\n<p><img alt=\"\" src=\"/DO-AN-TN-2019/public/upload/images/samsung-galaxy-a50-black-9(1).jpg\" style=\"height:450px; width:800px\" /></p>\r\n', 'samsung-galaxy-a50-black-9.jpg', '2019-06-26 17:22:04', '1', '2019-06-26 17:22:04', '1', 1, 1);
-
 -- --------------------------------------------------------
 
 --
--- Table structure for table `db_customer`
+-- Cấu trúc bảng cho bảng `db_customer`
 --
 
 DROP TABLE IF EXISTS `db_customer`;
@@ -145,7 +129,7 @@ CREATE TABLE IF NOT EXISTS `db_customer` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `db_discount`
+-- Cấu trúc bảng cho bảng `db_discount`
 --
 
 DROP TABLE IF EXISTS `db_discount`;
@@ -165,25 +149,10 @@ CREATE TABLE IF NOT EXISTS `db_discount` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
---
--- Dumping data for table `db_discount`
---
-
-INSERT INTO `db_discount` (`id`, `code`, `discount`, `limit_number`, `number_used`, `expiration_date`, `payment_limit`, `description`, `created`, `orders`, `trash`, `status`) VALUES
-(1, 'MAHETLUOT', 100000, 30, 30, '2019-09-29', 500000, 'Giam 100000', '2019-06-10', 1, 1, 1),
-(2, 'VANHIEP', 200000, 20, 3, '2019-06-12', 500000, 'Giam 200k', '2019-06-10', 1, 0, 1),
-(3, 'VANHIEP123', 200000, 300, 103, '2019-07-20', 300000, 'giảm 200k', '2019-06-25', 1, 1, 1),
-(4, 'MAHETHAN', 150000, 68, 23, '2019-06-30', 500000, 'giảm 300k', '2019-06-25', 1, 1, 1),
-(11, 'GBHVDU47CRQK', 100000, 1, 0, '2019-08-06', 0, 'Mã giảm giá 100.000 đ tự động khi đăng ký thành công', '2019-07-06', 0, 1, 1),
-(12, 'C8MNIAKEILSS', 100000, 1, 0, '2019-08-06', 0, 'Mã giảm giá 100.000 đ tự động khi đăng ký thành công', '2019-07-06', 0, 1, 1),
-(13, 'CAOTHANG', 150000, 200, 0, '2019-07-26', 100000, 'Giảm 150k', '2019-07-06', 1, 1, 1),
-(14, 'RRHVDU47CRSO', 100000, 1, 0, '2019-08-06', 0, 'Mã giảm giá 100.000 đ tự động khi đăng ký thành công', '2019-07-06', 0, 1, 1),
-(15, '9WOXIAKEILSS', 100000, 1, 0, '2019-08-06', 0, 'Mã giảm giá 100.000 đ tự động khi đăng ký thành công', '2019-07-06', 0, 1, 1);
-
 -- --------------------------------------------------------
 
 --
--- Table structure for table `db_district`
+-- Cấu trúc bảng cho bảng `db_district`
 --
 
 DROP TABLE IF EXISTS `db_district`;
@@ -197,7 +166,7 @@ CREATE TABLE IF NOT EXISTS `db_district` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `db_district`
+-- Đang đổ dữ liệu cho bảng `db_district`
 --
 
 INSERT INTO `db_district` (`id`, `name`, `type`, `provinceid`) VALUES
@@ -918,7 +887,7 @@ INSERT INTO `db_district` (`id`, `name`, `type`, `provinceid`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `db_order`
+-- Cấu trúc bảng cho bảng `db_order`
 --
 
 DROP TABLE IF EXISTS `db_order`;
@@ -950,7 +919,7 @@ CREATE TABLE IF NOT EXISTS `db_order` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `db_orderdetail`
+-- Cấu trúc bảng cho bảng `db_orderdetail`
 --
 
 DROP TABLE IF EXISTS `db_orderdetail`;
@@ -970,7 +939,7 @@ CREATE TABLE IF NOT EXISTS `db_orderdetail` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `db_producer`
+-- Cấu trúc bảng cho bảng `db_producer`
 --
 
 DROP TABLE IF EXISTS `db_producer`;
@@ -991,7 +960,7 @@ CREATE TABLE IF NOT EXISTS `db_producer` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `db_product`
+-- Cấu trúc bảng cho bảng `db_product`
 --
 
 DROP TABLE IF EXISTS `db_product`;
@@ -1024,7 +993,7 @@ CREATE TABLE IF NOT EXISTS `db_product` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `db_province`
+-- Cấu trúc bảng cho bảng `db_province`
 --
 
 DROP TABLE IF EXISTS `db_province`;
@@ -1036,7 +1005,7 @@ CREATE TABLE IF NOT EXISTS `db_province` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC;
 
 --
--- Dumping data for table `db_province`
+-- Đang đổ dữ liệu cho bảng `db_province`
 --
 
 INSERT INTO `db_province` (`id`, `name`, `type`) VALUES
@@ -1107,7 +1076,7 @@ INSERT INTO `db_province` (`id`, `name`, `type`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `db_slider`
+-- Cấu trúc bảng cho bảng `db_slider`
 --
 
 DROP TABLE IF EXISTS `db_slider`;
@@ -1125,22 +1094,10 @@ CREATE TABLE IF NOT EXISTS `db_slider` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
---
--- Dumping data for table `db_slider`
---
-
-INSERT INTO `db_slider` (`id`, `name`, `link`, `img`, `created`, `created_by`, `modified`, `modified_by`, `trash`, `status`) VALUES
-(1, 'Banner1', 'banner-1', '2.jpg', '2019-06-13 21:27:24', '1', '2019-06-13 23:42:42', '', 0, 1),
-(2, 'Banner 2', 'Banner-2', 'default.png', '2019-06-13 23:45:04', '1', '2019-06-13 23:45:44', '', 0, 1),
-(3, 'trang chu 1', 'trang-chu', 'default.png', '2019-07-03 17:05:52', '1', '2019-07-03 17:07:18', '', 1, 1),
-(4, 'slider trang chu 2', 'slider-trang-chu-2', 'iphone-banner.jpg', '2019-07-03 17:06:38', '1', '2019-07-03 17:06:38', '1', 1, 1),
-(5, 'slider trang chu 3', 'slider-trang-chu-3', 'xsmaxbanner.png', '2019-07-03 17:06:58', '1', '2019-07-03 17:06:58', '1', 1, 1),
-(6, 'ss', 'ss', 'icon_142e7.png', '2019-07-03 17:08:07', '1', '2019-07-03 17:08:07', '1', 0, 1);
-
 -- --------------------------------------------------------
 
 --
--- Table structure for table `db_user`
+-- Cấu trúc bảng cho bảng `db_user`
 --
 
 DROP TABLE IF EXISTS `db_user`;
@@ -1163,20 +1120,17 @@ CREATE TABLE IF NOT EXISTS `db_user` (
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `db_user`
+-- Đang đổ dữ liệu cho bảng `db_user`
 --
 
 INSERT INTO `db_user` (`id`, `fullname`, `username`, `password`, `role`, `email`, `gender`, `phone`, `address`, `img`, `created`, `trash`, `status`) VALUES
-(1, 'ADMIN', 'admin', 'cdfdc0c9b7a4c97721e7e5fdffe4547144a84f70', 1, 'admin@gmail.com', 1, '0167892615', 'Gò vấp', 'user-group.png', '2021-11-22 09:16:16', 1, 1),
-(2, 'Quản lý', 'quanly', '7c4a8d09ca3762af61e59520943dc26494f8941b', 1, 'quanly@gmail.com', 1, '0985657410', 'Gò vấp', 'bc0d4c186522764fc9457b7bacb635e4.png', '2019-04-25 22:08:18', 1, 1),
-(3, 'Nhân viên', 'nhanvien', '7c4a8d09ca3762af61e59520943dc26494f8941b', 2, 'nv@gmail.com', 1, '09990990', 'Gò vấp', 'b78af1dc3e1098f71e7cd607c49f5d51.png', '2019-04-23 09:20:41', 1, 1),
-(4, 'Nguyễn Văn A', 'nhanviena', '7c4a8d09ca3762af61e59520943dc26494f8941b', 2, 'nv@gmail.com', 1, '0985657410', 'Gò vấp 1', '403ceb0ed6fdb72494bbd2ac39182b04.png', '2019-04-25 22:08:18', 1, 1),
-(6, 'Nguyễn Văn B', 'nhanvienb', '7c4a8d09ca3762af61e59520943dc26494f8941b', 2, 'nv@gmail.com', 0, '09876543532', 'Gò vấp', 'user.png', '2019-04-23 09:18:18', 1, 1);
+(1, 'ADMIN', 'admin', '364753b4eef739daabeffd65bb7858b23edccb02', 1, 'admin@gmail.com', 1, '0167892615', 'Gò vấp', 'user-group.png', '2021-11-22 09:16:16', 1, 1),
+(2, 'Quản lý', 'quanly', '7c4a8d09ca3762af61e59520943dc26494f8941b', 1, 'quanly@gmail.com', 1, '0985657410', 'Gò vấp', 'bc0d4c186522764fc9457b7bacb635e4.png', '2019-04-25 22:08:18', 1, 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `db_usergroup`
+-- Cấu trúc bảng cho bảng `db_usergroup`
 --
 
 DROP TABLE IF EXISTS `db_usergroup`;
@@ -1194,7 +1148,7 @@ CREATE TABLE IF NOT EXISTS `db_usergroup` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `db_usergroup`
+-- Đang đổ dữ liệu cho bảng `db_usergroup`
 --
 
 INSERT INTO `db_usergroup` (`id`, `name`, `created`, `created_by`, `modified`, `modified_by`, `trash`, `access`, `status`) VALUES
@@ -1202,17 +1156,17 @@ INSERT INTO `db_usergroup` (`id`, `name`, `created`, `created_by`, `modified`, `
 (2, 'Nhân viên', '2019-05-14 23:29:21', 1, '2019-05-14 23:29:21', 4, 1, 1, 1);
 
 --
--- Constraints for dumped tables
+-- Các ràng buộc cho các bảng đã đổ
 --
 
 --
--- Constraints for table `db_district`
+-- Các ràng buộc cho bảng `db_district`
 --
 ALTER TABLE `db_district`
   ADD CONSTRAINT `db_district_ibfk_1` FOREIGN KEY (`provinceid`) REFERENCES `db_province` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- Constraints for table `db_order`
+-- Các ràng buộc cho bảng `db_order`
 --
 ALTER TABLE `db_order`
   ADD CONSTRAINT `db_order_ibfk_2` FOREIGN KEY (`province`) REFERENCES `db_province` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
@@ -1220,21 +1174,21 @@ ALTER TABLE `db_order`
   ADD CONSTRAINT `db_order_ibfk_4` FOREIGN KEY (`customerid`) REFERENCES `db_customer` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- Constraints for table `db_orderdetail`
+-- Các ràng buộc cho bảng `db_orderdetail`
 --
 ALTER TABLE `db_orderdetail`
   ADD CONSTRAINT `db_orderdetail_ibfk_2` FOREIGN KEY (`productid`) REFERENCES `db_product` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `db_orderdetail_ibfk_3` FOREIGN KEY (`orderid`) REFERENCES `db_order` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- Constraints for table `db_product`
+-- Các ràng buộc cho bảng `db_product`
 --
 ALTER TABLE `db_product`
   ADD CONSTRAINT `db_product_ibfk_1` FOREIGN KEY (`catid`) REFERENCES `db_category` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `db_product_ibfk_2` FOREIGN KEY (`producer`) REFERENCES `db_producer` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- Constraints for table `db_user`
+-- Các ràng buộc cho bảng `db_user`
 --
 ALTER TABLE `db_user`
   ADD CONSTRAINT `db_user_ibfk_1` FOREIGN KEY (`role`) REFERENCES `db_usergroup` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
